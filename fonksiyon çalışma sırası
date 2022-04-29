@@ -1,0 +1,30 @@
+    private void Awake()
+    {   //İlk Çalışan fonksiyon
+        //sadece 1 defa çalışır
+    }
+    private void OnEnable()
+    {
+        //sadece 1 defa çalışır
+        //aktif olan oblerde çalışacaktır
+    }
+    private void Start()
+    {
+        //sadece 1 defa çalışır
+    }
+    private void FixedUpdate()
+    {
+        //sürekli çalışacak durumlar yazılır
+        //update fonskiyonda daha fazla çalışır
+    }
+    private void Update()
+    {
+        //sürekli çalışacak durumlar yazılır
+    }
+    private void LateUpdate()
+    {
+        //bütün update fonksiyonların bitmesini bekler ve onlardan sonra çalışır.
+    }
+    private void OnDisable()
+    {
+        //pasif olan oblerde çalışacaktır
+    }
