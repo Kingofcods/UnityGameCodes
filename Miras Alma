@@ -1,0 +1,7 @@
+public class mirasalan : mirasci
+{
+    mirasci mirasciclasim = new mirasci //public olmasına dikkat et
+     mirasci.marascidakifonksiyon();
+    {
+
+    }
