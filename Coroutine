@@ -1,0 +1,11 @@
+ void Start()
+    {
+        StartCoroutine(Denemem());
+    }
+
+    IEnumerator Denemem ()
+    {
+        Debug.Log("1.yazıdırma");
+        yield return new WaitForSeconds(3);
+        Debug.Log("2.yazdırma");
+    }
