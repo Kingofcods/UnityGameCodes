@@ -1,6 +1,6 @@
  void Start()
     {
-        StartCoroutine(Denemem());
+        StartCoroutine(Denemem());//coroutine başlatır.
     }
 
     IEnumerator Denemem ()
@@ -9,3 +9,4 @@
         yield return new WaitForSeconds(3);
         Debug.Log("2.yazdırma");
     }
+    StopAllcoroutine
