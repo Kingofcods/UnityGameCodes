@@ -1,0 +1,14 @@
+gameObject.SendMessage(baslatılanfonsiyon)
+
+Void baslatılanfoksiyon() //fonsiyon çalışamaya başlar
+{
+
+}
+
+gameObject.BroadcastMessage(baslatılanfonsiyon)
+
+
+Void baslatılanfoksiyon() //çocuk içinde fonksiyon başlatır.
+{
+
+}
