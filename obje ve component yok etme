@@ -1,0 +1,5 @@
+destory(gameObject,2)// obje yok olur. Vigülden sonra sayı kaçsaniye sonra yok olcağını belirtir.
+
+destory(this)//script atalıan objeyi yok eder
+
+destory(GetComponent<Rigitbody>)//script atılan objenin componetini yok eder
