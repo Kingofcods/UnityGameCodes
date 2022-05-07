@@ -1,0 +1,12 @@
+{
+    public Transform hedef;
+    float hız = 1.5f;
+    void Start()
+    {
+
+    }
+    void Update()
+    {
+        transform.position = Vector3.Lerp(transform.position, hedef.position, hız * Time.deltaTime);
+    }
+}
