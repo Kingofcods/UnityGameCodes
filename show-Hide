@@ -1,0 +1,14 @@
+{
+    public GameObject text;
+   
+    public void göster()
+    {
+        text.SetActive(true);
+    }
+
+    
+    public void gizle()
+    {
+        text.SetActive(false);
+    }
+}
