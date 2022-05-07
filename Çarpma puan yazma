@@ -1,0 +1,12 @@
+int puan=0;
+    public Text puantext;
+    public GameObject küp; 
+    void OnCollisionEnter(Collision carpma) // Çarpışma Gerçekleştiği Anda
+    {
+        if (carpma.gameObject.name == "küp")
+        {
+            Destroy(carpma.gameObject);
+            puan++;
+            puantext.text = " " + puan;
+        }
+    }
