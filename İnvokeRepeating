@@ -1,0 +1,11 @@
+int gerisayım = 60;
+    public Text GERİSAYIMTEXT;
+    void Start()
+    {
+        InvokeRepeating("sayaç", 1, 1);// istenin fonksiyonun belirli aralıla sürekli çalıştırır.
+        
+    }
+    void sayaç()
+    {
+        gerisayım--; ;
+        GERİSAYIMTEXT.text = " " + gerisayım;
