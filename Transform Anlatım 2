@@ -1,0 +1,71 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEditor.SceneManagement;
+using UnityEngine;
+
+public class transformislemleri : MonoBehaviour
+{
+    // static methodlar   
+
+    public Transform hedef;
+    public Transform hedef2;
+
+    private float baslangiczamani;
+
+
+
+    void Start()
+    {
+
+        baslangiczamani = Time.time;
+        /*
+            Time.time 
+            Time.deltaTime 
+            Time.timeScale 
+        */
+
+        Vector3 birincipoz = new Vector3(4f, 2f, 2f);
+        Vector3 ikincipoz = new Vector3(2f, 5f, 1f);
+
+
+
+        print(birincipoz - ikincipoz);
+        print(birincipoz + ikincipoz);
+        print(birincipoz / 2f);
+        print(birincipoz * 3f);
+
+
+        /* Vector3 sonuc = Vector3.Scale(birincipoz, ikincipoz);
+
+         print(sonuc);*/
+
+        // print(Vector3.Min(birincipoz,ikincipoz));
+    }
+
+    
+    void Update()
+    {
+        //-------------------------------------------
+          // lerp
+            // transform.position = Vector3.Lerp(hedef.position, hedef2.position,(Time.time - baslangiczamani) * .2f);
+          //-------------------------------------------
+
+          // distance
+            /* float fark = Vector3.Distance(hedef.position, transform.position);
+            Debug.Log("Fark Şudur : " + fark);*/
+        //-------------------------------------------
+
+        // angle
+                /*
+                Vector3 mesafe = hedef.position - transform.position;
+
+                float angle = Vector3.Angle(mesafe, transform.up);
+
+                Debug.Log(angle);
+
+                if (angle < 5f)
+                    Debug.Log("Açı sağlandı");*/
+
+
+    }
+}
