@@ -1,0 +1,43 @@
+ 
+{
+    public string[] takım1 = { "TS", "FB", "ALN", "BŞK", "KNY" };
+    public Text takımtext1, puantext1;
+    public int[] puan1 = { 70, 50, 55, 60, 45 };
+    public Texture[] resims1 = new Texture[5];
+    int seçim1 = 0;
+    public RawImage resim1;
+    static int skor1 = 0;
+    public Text skortext1;
+    public Text takım2isim;
+
+
+
+    void Start()
+    {
+        takım2isim.text = "" + PlayerPrefs.GetString("textbox2");
+        takımtext1.text = takım1[seçim1];
+        puantext1.text = puan1[seçim1].ToString();
+        resim1.texture = resims1[seçim1];
+    }
+
+
+    public void doğru()
+    {
+        seçim1++;
+        skor1++;
+        skortext1.text = "" + skor1;
+        PlayerPrefs.SetInt("takım2puan", skor1);
+        if (seçim1 >= takım1.Length)
+        {
+            seçim1 = 0;
+        }
+
+        takımtext1.text = takım1[seçim1];
+        puantext1.text = puan1[seçim1].ToString();
+        resim1.texture = resims1[seçim1];
+    }
+    public void yanlış()
+    {
+        skor1--;
+        skortext1.text = "" + skor1;
+        PlayerPrefs.SetInt("takım2puan", skor1);
