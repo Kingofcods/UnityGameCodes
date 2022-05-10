@@ -1,0 +1,6 @@
+
+   
+    public void anasayfa()
+    {
+        SceneManager.LoadScene(0);
+    }
