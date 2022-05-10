@@ -1,0 +1,18 @@
+
+ public void sahne()
+    {
+        x++;
+        PlayerPrefs.SetInt("count",x);
+        if (x % 2 == 1)
+        {
+            butontext.text = "Takım 1'e Geç";
+            PlayerPrefs.SetString("butonisim", butontext.text);
+            SceneManager.LoadScene(3);
+        }
+        if (x % 2 == 0)
+        {
+            butontext.text = "Takım 2'ye Geç";
+            PlayerPrefs.SetString("butonisim", butontext.text);
+            SceneManager.LoadScene(1);
+        }
+    } 
