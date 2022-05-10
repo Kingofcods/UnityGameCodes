@@ -1,0 +1,32 @@
+
+
+{
+    public GameObject atakımı, btakımı;
+    public Text sonuç;
+    public Text sonuç2;
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (atakımı.activeSelf == true && btakımı.activeSelf == true) 
+        {
+            sonuç.text = "iki takım karşılaşmaya hazır";
+        }
+        if (atakımı.activeSelf == true && btakımı.activeSelf == false) 
+        {
+            sonuç.text = "A takımı karşılaşmaya hazır";
+        }
+        if (atakımı.activeSelf == false && btakımı.activeSelf == true) 
+        {
+            sonuç.text = "B takımı karşılaşmaya hazır";
+        }
+        if (atakımı.activeSelf == false && btakımı.activeSelf == false) 
+        {
+            sonuç.text = "mac iptal";
+        }
+       
+    }
