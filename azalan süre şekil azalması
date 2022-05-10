@@ -1,0 +1,31 @@
+
+ {
+    public Image bar;
+    float toplamsüre = 60.0f;
+    int toplamsüre1 = 60;
+    float suankisüre = 60.0f;
+    public Text gerisayımsayı;
+    void Start()
+    {
+        InvokeRepeating("sureakış", 1, 1);//istenlen foksiyonu birer saniye arayla çalıştırır.
+    }
+
+    // Update is called once per frame
+    void sureakış()
+    {
+        suankisüre = suankisüre - 1f;
+        bar.fillAmount = suankisüre / toplamsüre;
+        toplamsüre1--;
+        gerisayımsayı.text = "" + toplamsüre1;
+        if (toplamsüre1 == 0)
+            {
+            CancelInvoke();
+        }
+    }
+    void Update()
+    {
+        if (toplamsüre1 == 0)
+        {
+            CancelInvoke();
+        }
+    }
