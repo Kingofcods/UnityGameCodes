@@ -1,0 +1,22 @@
+
+{
+    public Toggle ses;
+    public AudioSource music;
+    void Start()
+    {
+        
+    }
+
+    
+    public void seskortrol()
+    {
+        if (ses.isOn)   
+        {
+            music.Play();
+        }
+        else
+        {
+            music.Stop();
+        }
+    }
+}
