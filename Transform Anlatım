@@ -1,0 +1,60 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEditor.SceneManagement;
+using UnityEngine;
+
+public class transformislemleri : MonoBehaviour
+{
+    Vector3 Pozisyonum1;
+    Vector3 Pozisyonum2;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+           /* Debug.Log(transform.position); // bir vectörün pozisyonunu alır
+            Debug.Log(transform.rotation); // bir vectörün rotasyonnu alır alır
+            Debug.Log(transform.localScale);*/ // bir vectörün ölçeğini alır
+
+            Pozisyonum1 = new Vector3(1f, 2.1f, 1f); // bir vectör tanımlama örneği
+            Pozisyonum2 = new Vector3(1f, 2.1f, 1f);
+            Debug.Log(Pozisyonum1.ToString()); // bir vectörün dönen değerlerini string olarak almamızı sağlar
+
+       /* if (Pozisyonum1==Pozisyonum2)
+
+            Debug.Log("evet aynı");
+        else
+
+            Debug.Log("hayır aynı");
+
+        /*  if (Equals(Pozisyonum1, Pozisyonum2))
+
+              Debug.Log("evet aynı");
+          else
+
+              Debug.Log("hayır aynı");*/
+    }
+
+    
+    void Update()
+    {
+
+
+        // Debug.Log(transform.position.normalized); 
+        // Debug.Log(Vector3.SqrMagnitude(transform.position));
+        // Debug.Log(Vector3.Magnitude(transform.position));
+
+        /*  transform.Translate(Vector3.one * 5f * Time.deltaTime);
+        //  transform.Translate(new Vector3(1f, 1f, 1f) * 5f * Time.deltaTime);
+        ---------------------------------------------------------------------
+            transform.Translate(Vector3.zero * 5f * Time.deltaTime);
+         // transform.Translate(new Vector3(0f, 0f, 0f) * 5f * Time.deltaTime);
+        ---------------------------------------------------------------------
+         // transform.Translate(Vector3.right * 5f * Time.deltaTime);
+         // transform.Translate(new Vector3(1f, 0f, 0f) * 5f * Time.deltaTime);
+        ---------------------------------------------------------------------
+         // transform.Translate(Vector3.back *  20f * Time.deltaTime);
+         // transform.Translate(new Vector3(0f, 0f, -1f) * 5f * Time.deltaTime);
+        ---------------------------------------------------------------------
+         */
+    }
+}
