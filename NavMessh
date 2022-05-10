@@ -1,0 +1,17 @@
+using UnityEngine.AI;
+
+public class düşman : MonoBehaviour
+{
+    NavMeshAgent mesh;
+    public Transform karakter;
+    void Start()
+    {
+        mesh = GetComponent<NavMeshAgent>();
+    }
+
+   
+    void Update()
+    {
+        mesh.destination=karakter.position;
+    }
+}
